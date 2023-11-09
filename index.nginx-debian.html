@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="idk.js"></script>
+<title>About me</title>
+</head>
+<body>
+    <div id="vanta-animation"></div>
+    <div id="divbody">
+        <div id="projects">
+            <img class="github" title="hi" src="github.png" alt="github logo"></img>
+            <a target="_blank" class="link" href="https://github.com/dotada/arduino-assisted-password-generator">Arduino assisted password generator</a>
+            <img class="github" title="hi" src="github.png" alt="github logo"></img>
+            <a target="_blank" class="link" href="https://github.com/dotada/WindowsFormsApp1">C# youtube downloader</a>
+            <img class="github" title="hi" src="github.png" alt="github logo"></img>
+            <a target="_blank" class="link" href="https://github.com/dotada/pythonchattr/tree/SSLTest">Basic python chat app</a>
+            <img class="github" title="hi" src="github.png" alt="github logo"></img>
+            <a target="_blank" class="link" href="https://github.com/dotada/Project3">First C# miscellaneous project</a>
+            <img class="github" title="hi" src="github.png" alt="github logo"></img>
+            <a target="_blank" class="link" href="https://github.com/dotada/newencryptionrustproject">Joke ransomware in Rust</a>
+            <img class="github" title="hi" src="github.png" alt="github logo"></img>
+            <a target="_blank" class="link" href="https://github.com/dotada/aboutme">The very site you're looking at</a>
+        </div>
+        <div id="whiteline"></div>
+        <div id="leftDiv">
+            <img id="me" src="dejafloppa.png"></img>
+            <p id="aboutme">15 year old programmer from Bulgaria, always been interested in technology. Switched from cybersecurity to programming.
+                I have worked with:</p>
+            <img id="html" src="732212.png"></img>
+            <img id="csharp" src="cs.png"></img>
+            <img id="cpp" src="6132222.png"/>
+            <img id="pyth" src="python.png"/>
+            <img id="rust" src="rust.png"/>
+            <img id="git" src="git.png"/>
+            <img id="js" src="js.png"/>
+            <img id="linux" src="linux.png"/>
+            <img id="mysql" src="mysqle.png"/>
+            <img id="arduino" src="arduino.png"/>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    .github {
+        position: absolute;
+        width: 30px;
+        top: 7px;
+    }
+    .github:nth-of-type(1) {
+        top: 137px;
+    } 
+    .github:nth-of-type(2) {
+        top: 268px;
+    }
+    .github:nth-of-type(3) {
+        top: 399px;
+    }
+    .github:nth-of-type(4) {
+        top: 530px;
+    }
+    .github:nth-of-type(5) {
+        top: 662px;
+    }
+    .link {
+        display:flex;
+        font-size: 1.8vw;
+        color:cornflowerblue;
+        padding-left: 40px;
+    }
+    #projects {
+        position: inherit;
+        width: 633px;
+        height: 700px;
+        left: 530px;
+        display: flex;
+        flex-direction: column;
+        gap:90px;
+    }
+    #arduino {
+        position: absolute;
+        height: auto;
+        max-width: 25%;
+        top: 700px;
+        right: 110px;
+    }
+    #mysql {
+        position: absolute;
+        height: auto;
+        max-width: 28%;
+        top: 680px;
+        right: 350px;
+    }
+
+    #linux {
+        position: absolute;
+        height: auto;
+        max-width: 30%;
+        top: 680px;
+        right: 185px;
+    }
+    #js {
+        position: absolute;
+        height: auto;
+        max-width: 20%;
+        top: 700px;
+        right: 280px;
+    }
+    #git {
+        position: absolute;
+        height: auto;
+        max-width: 20%;
+        top: 700px;
+        right: 450px;
+    }
+    #rust {
+        position: absolute;
+        height: auto;
+        max-width: 20%;
+        top: 600px;
+        right: 120px;
+    }
+    #pyth {
+        position: absolute;
+        height: auto;
+        max-width: 20%;
+        top: 600px;
+        right: 200px;
+    }
+    #cpp {
+        position: absolute;
+        height: auto;
+        max-width: 22%;
+        top: 600px;
+        right: 280px;
+    }
+    #csharp {
+        position: absolute;
+        height: auto;
+        max-width: 20%;
+        top: 600px;
+        right: 370px;
+    }
+    #html {
+        position: absolute;
+        height: auto;
+        max-width: 20%;
+        top: 600px;
+        right: 450px;
+    }
+
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+    
+    #vanta-animation {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 1;
+    }
+    
+    #divbody {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        width: 1200px;
+        height: 800px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+        backdrop-filter: blur(10px);
+    }
+    
+    #whiteline {
+        border-left: 1px solid rgb(255, 255, 255);
+        height: 700px;
+        position: fixed;
+        left: 504px;
+    }
+
+    #leftDiv {
+        position: absolute;
+        left: 21%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0);
+        transform: none; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #me {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        border-radius: 20px;
+        top: 80px;
+        right: 150px;
+    }
+    @font-face {
+        font-family: metropolis-thin;
+        src: url(Metropolis-Thin.otf);
+    }
+    #aboutme {
+        position: relative;
+        font-family: metropolis-thin;
+        font-size: 25px;
+        width: 350px;
+        top:100px;
+        right: 170px;
+    }
+</style>
